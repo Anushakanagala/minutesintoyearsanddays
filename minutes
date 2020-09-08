@@ -1,0 +1,22 @@
+package anusha;
+import java.util.Scanner;
+public class Minute {
+
+	public static void main(String[] Strings)
+	{
+		double totalminutes = 60*24*365;
+		Scanner a = new Scanner(System.in);
+		System.out.println("Enter the number of minutes: " );
+		double min = a.nextDouble();
+		long years = (long) (min/totalminutes);
+		int days = (int) (min/60/24)%365 ;
+		System.out.println((int)min + " minutes is approximately " + years + " years and " + days + " days ");
+	}
+
+}
+
+
+output:
+Enter the number of minutes: 
+3456789
+ 3456789 minutes is approximately 6 years and 210 days
